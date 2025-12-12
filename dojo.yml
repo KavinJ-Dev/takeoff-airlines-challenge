@@ -1,12 +1,12 @@
 id: example
-name: Example Dojo
+name: Airline Seating Dojo
 type: example
 image: pwncollege/challenge-legacy:latest
 modules:
   - id: takeoff-airline-seating
-    name: Platform Tutorial
+    name: Airline Seating
     description: >
-      Start here! This will be a tutorial on how to use this platform and start working on the chlalenges. We highly recommend completing the tutorial challenges in order.
+      Start here! This will be a module on stuff about airline seating and problems
     challenges:
-      - id: start-here
-        name: Start Here
+      - id: problem-1-airline-seating
+        name: Problem 1 (Airline Seating)
