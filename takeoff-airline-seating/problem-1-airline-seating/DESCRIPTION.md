@@ -43,6 +43,12 @@ Output: [1, 25, 150, 300]
 - null is invalid (not a number)
 - Result is sorted: [1, 25, 150, 300]
 
+### How to Submit
+- first navigate to cd challenge
+- the open the 'modify_me.py' file
+- once u implement your solution, check your soluion by running the checker with the command ./checker
+- copy the flag and past into codesafe challenge box
+
 ### Hints:
 Think about edge cases: What if the input is empty? What if all entries are invalid?
 - Validation first: Check each seat to make sure it's a valid integer between 1 and 300
