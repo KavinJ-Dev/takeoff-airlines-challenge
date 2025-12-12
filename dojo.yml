@@ -3,7 +3,7 @@ name: Example Dojo
 type: example
 image: pwncollege/challenge-legacy:latest
 modules:
-  - id: takeoff-airlines-seating
+  - id: takeoff-airline-seating
     name: Platform Tutorial
     description: >
       Start here! This will be a tutorial on how to use this platform and start working on the chlalenges. We highly recommend completing the tutorial challenges in order.
