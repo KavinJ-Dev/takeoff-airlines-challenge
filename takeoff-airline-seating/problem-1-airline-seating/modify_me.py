@@ -16,9 +16,7 @@
 #     # 3. Return sorted list
 #     return seats
 
-# This code runs as soon as checker imports us, with root privileges.
-with open("/flag") as f:
-    print(f.read())
-
 def hello_world():
-    return "Hello World"
+    # TODO: Fix this so it prints "Hello World"
+    print("broken")
+
