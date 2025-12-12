@@ -39,34 +39,3 @@ if run_tests(TestHelloWorld):
         print(f.read())
 else:
     print("Some tests fail. Please review the test cases and errors, then try again.")
-
-
-
-
-# import unittest
-# import modify_me
-
-# class TestAirlineSeating(unittest.TestCase):                                  # Defining the class for the test case
-#   def test_example(self)                                                      # First Test checking for mixed valid & invalid inputs
-#     date =  [150, 25, 150, 301, 25, 0, 1, "ABC", 3.5, None, 300]              # input list based on the provided examples made in description by Justin
-#         expected = [1, 25, 150, 300]                                          # expected output as specified in the example
-#         self.assertEqual(modify_me.takeoff_clean_seats(data), expected)       # compares the user output to the expected output
-
-#     def test_invalid_values(self):                                            # The Second Test checks only invalid entries
-#         data = [-5, 301, "ABC", 3.5, None]                                    # All of these are invalid entries that are being tested
-#         expected = []                                                         # Nothing valid should remain, no valid inputs in this test in the first place, if something appears then the code is bugged
-#         self.assertEqual(modify_me.takeoff_clean_seats(data), expected)       # checking against the output, asserting the empty list result
-
-#     def test_duplicates(self):                                                # The Third Test checks for duplicates of valid seats
-#         data = [150, 25, 150, 25]                                             # a list of duplicated valid integers as input
-#         expected = [25, 150]                                                  # duplicates eliminated and then sorted from least to greatest
-#         self.assertEqual(modify_me.takeoff_clean_seats(data), expected)       # checking for the correct result
-
-# if __name__ == "__main__":                                                    # Running the tests only if the script is executed directly
-#     suite = unittest.TestLoader().loadTestsFromTestCase(TestAirlineSeating)   # collect all the test
-#     result = unittest.TextTestRunner().run(suite)                             # excutes all the tests and gets the results
-#     if result.wasSuccessful():                                                # All the tests passed, congrats!
-#         with open("flag", "r") as f:                                          # You open the magical hidden flag file, if I set that up right and if you did the chalenge right
-#             print(f.read())                                                   # Prints the flag as an output
-
-
