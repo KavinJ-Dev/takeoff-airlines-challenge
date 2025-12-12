@@ -1,0 +1,25 @@
+import unittest
+import modify_me
+
+class TestAirlineSeating(unittest.TestCase):
+  def test_example(self)
+    date =  [150, 25, 150, 301, 25, 0, 1, "ABC", 3.5, None, 300]
+        expected = [1, 25, 150, 300]
+        self.assertEqual(modify_me.clean_seats(data), expected)
+
+    def test_invalid_values(self):
+        data = [-5, 301, "ABC", 3.5, None]
+        expected = []
+        self.assertEqual(modify_me.clean_seats(data), expected)
+
+    def test_duplicates(self):
+        data = [150, 25, 150, 25]
+        expected = [25, 150]
+        self.assertEqual(modify_me.clean_seats(data), expected)
+
+if __name__ == "__main__":
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestAirlineSeating)
+    result = unittest.TextTestRunner().run(suite)
+    if result.wasSuccessful():
+        with open("flag", "r") as f:
+            print(f.read())
