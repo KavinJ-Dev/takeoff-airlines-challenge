@@ -7,10 +7,30 @@ sys.path.append("/challenge")
 import modify_me
 
 
-class TestHelloWorld(unittest.TestCase):
-    def test_hello_world(self):
-        result = modify_me.hello_world()
-        self.assertEqual(result, "Hello World")
+class TestTakeoffCleanSeats(unittest.TestCase):
+    def test_basic_cleaning(self):
+        seating_chart = [1, 2, 2, 3, 400, -5, 0]  # some invalid entries
+        expected = [1, 2, 3]  # valid, deduplicated, sorted
+        result = modify_me.takeoff_clean_seats(seating_chart)
+        self.assertEqual(result, expected)
+
+    def test_empty_list(self):
+        seating_chart = []
+        expected = []
+        result = modify_me.takeoff_clean_seats(seating_chart)
+        self.assertEqual(result, expected)
+
+    def test_all_invalid(self):
+        seating_chart = [0, -1, 301, 999]
+        expected = []
+        result = modify_me.takeoff_clean_seats(seating_chart)
+        self.assertEqual(result, expected)
+
+    def test_duplicates(self):
+        seating_chart = [100, 100, 100]
+        expected = [100]
+        result = modify_me.takeoff_clean_seats(seating_chart)
+        self.assertEqual(result, expected)
 
 
 # Taken from https://stackoverflow.com/questions/13550039/how-to-use-python-unit-tests-in-self-contained-program
@@ -33,7 +53,7 @@ def run_tests(test_case):
         return False
 
 
-if run_tests(TestHelloWorld):
+if run_tests(TestTakeoffCleanSeats):
     print("All tests pass! Reading and displaying flag...")
     with open("/flag") as f:
         print(f.read())
