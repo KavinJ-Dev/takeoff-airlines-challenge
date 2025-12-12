@@ -1,4 +1,4 @@
-name: Platform Tutorial
+name: Solve Problems
 challenges:
-  - id: start-here
-    name: Start Here
+  - id: problem-1-airline-seating
+    name: problem-1-airline-seating

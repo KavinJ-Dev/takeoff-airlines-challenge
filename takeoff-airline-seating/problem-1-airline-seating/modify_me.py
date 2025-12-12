@@ -17,6 +17,5 @@
 #     return seats
 
 def hello_world():
-    # TODO: Fix this so it prints "Hello World"
-    print("broken")
+    return "Hello World"
 
