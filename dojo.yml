@@ -1,14 +1,20 @@
-id: hw-six-dojo
-name: Dojo Six - Takeoff Airline Seating
-description: |
-  In this dojo, you willl work with a seating chart for Takeoff Airlines. Your task is to implement a function that cleans the seating chart by removing any invalid seat entries. A valid seat entry is defined as a non-empty string. You will be provided with a sample seating chart, and you need to write the logic to clean it up.
-  This exercise will help you practice data manipulation and validation in Python.
-
-  modules:
-    - id: takeoff-airline-seating
-      name: Takeoff Airline Seating
-      description: Implement a function to clean a seating chart by removing invalid seat entries.
-      challenges:
-        - id: takeoff-clean-seats
-          name: Clean Seating Chart
-          description: Implement the `takeoff_clean_seats` function to clean the seating chart.
+id: example
+name: Example Dojo
+type: example
+image: pwncollege/challenge-legacy:latest
+modules:
+  - id: platform-tutorial
+    name: Platform Tutorial
+    description: >
+      Start here! This will be a tutorial on how to use this platform and start working on the chlalenges. We highly recommend completing the tutorial challenges in order.
+    challenges:
+      - id: start-here
+        name: Start Here
+      - id: format-of-challenges
+        name: Format of Challenges
+      - id: saving-files
+        name: Saving Files in the Environment
+  
+  - id: hello
+  - id: world
+  - id: demo
