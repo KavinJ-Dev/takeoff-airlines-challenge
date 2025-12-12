@@ -1,10 +1,10 @@
 import unittest
 import modify_me
 
-class TestAirlineSeating(unittest.TestCase):
-  def test_example(self)
-    date =  [150, 25, 150, 301, 25, 0, 1, "ABC", 3.5, None, 300]
-        expected = [1, 25, 150, 300]
+class TestAirlineSeating(unittest.TestCase):                      # Defining the class for the test case
+  def test_example(self)                                          # First Test Checking for mixed valid & invalid inputs
+    date =  [150, 25, 150, 301, 25, 0, 1, "ABC", 3.5, None, 300]  # input list based on the provided examples made in description by Justin
+        expected = [1, 25, 150, 300]                              # expected output as specified in the example by Justin
         self.assertEqual(modify_me.clean_seats(data), expected)
 
     def test_invalid_values(self):
@@ -23,3 +23,4 @@ if __name__ == "__main__":
     if result.wasSuccessful():
         with open("flag", "r") as f:
             print(f.read())
+
