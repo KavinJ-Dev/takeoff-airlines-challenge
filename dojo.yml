@@ -1,10 +1,10 @@
 id: example
-name: Dojo
+name: Airline Seating Dojo
 type: example
 image: pwncollege/challenge-legacy:latest
 modules:
   - id: takeoff-airline-seating
-    name: Airline Seating
+    name: Problems
     description: >
       Start here! This will be a module on stuff about airline seating and problems
     challenges:
